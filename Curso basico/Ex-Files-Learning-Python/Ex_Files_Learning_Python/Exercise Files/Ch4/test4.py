@@ -14,7 +14,7 @@ i = 4
 d = 4.0
 s = 'HackerRank '
 # Declare second integer, double, and String variables.
-i2= 
+i2= 2
 d2=input()
 s2=input()
 # Read and save an integer, double, and String to your variables.
