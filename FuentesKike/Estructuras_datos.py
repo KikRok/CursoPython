@@ -40,14 +40,13 @@ def main():
     gameT = ('Piedra2', 'Papel2', 'Tijeras2')
     print_list(gameT) #Por ejemplo, se puede recorrer igual y imprimir igual
     #pero no se puede hacer append, remove, insert, etc...
-
-
 def print_list(l):
     for i in l:
         print (i, end=' ', flush=True)
     print ()
     print (', '.join(l)) #join, junta los elementos.
     print (len(l)) #len: numero de elementos de la lista
+
 
 
 def diccionarios():
@@ -78,9 +77,6 @@ def diccionarios():
     else:
         print (animales['lion'])
     print_dic(animales)
-
-
-
 def print_dic(d):
     for x in d:
         print (f'{x}: {d[x]}') #f de format
@@ -94,6 +90,55 @@ def print_dic(d):
 
 
 
+def sets():
+    ##### Set #####
+    # Lista de elementos de una fuente que no permite duplicados
+    # Se definen con set(), indicando el valor
+    a = set('Kike,Roser,Iona') #guarda un conjunto de valores unicos, ordenados
+    print_set(a)
+    b = set('Mi nabo saca suco') 
+    print_set(sorted(b))
+
+    c = a - b #c contiene los elementos que estan en a, pero no en b
+    print_set(c)
+
+    d = a and b #Los que estan en los 2. Se puede usar OR, xor, etc...
+    print_set(d)
+
+    f=[201901,201902,201903,201905,201901,201910,201905]
+    f2 = set(f) #se puede hacer lo mismo con listas, mientras se pase solo un objeto.
+    print_set(f2)
+def print_set(s):
+    for x in s:
+        print (x, end = ' ') #en end indica que despues de cara print, mete un espacio en vez del default, que es un salto de linea
+    print()
+
+
+
+def list_compehension():
+    ##### list (comprhension) #####
+    # Lista de listas. Se crean definiendo una lista [ con logica dentro ]
+    seq = range(11)
+    print (type(seq))
+    print_list2(seq)
+
+    seq2 = [x * 2 for x in seq] #creamos una lista, desde la lista anterior, multiplicando por 2 los elementos
+                                # se recorre la primera lista en la propia definición                                
+    print_list2(seq2)
+
+    seq3 = [y for y in seq if y % 3 != 0] #Crea la lista seq3 recorriendo seq con y, y solo guardando el valor si al dividir entre 3 no da 0
+    print_list2(seq3)
+def print_list2(l):
+    for i in l:
+        print (i, end=' ', flush=True)
+    print ()
+
 if __name__ == '__main__': 
-    #main()
-    diccionarios()
+    #Notas: Todas las estructuras pueden contener elementos de diferente tipo, incluso listas de listas
+    # se puede usar la funcion isinstance para evaliar si que hay dentro
+    # if isintance (objeto, tipo): haz esto -> if isintance (o, list):
+
+    #main() # listas y tuplas
+    #diccionarios()
+    #sets()
+    list_compehension()
