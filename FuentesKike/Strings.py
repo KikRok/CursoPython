@@ -40,3 +40,15 @@ print ('El numero en hezadecimal: {:x}'.format(x)) #:x muestra en hexadecimal. :
 print (f'The number is {x:b}')
 
 
+#Slits y Joins
+s5 = 'Esto es un string muy laargo con palabras separadas'
+print (s5)
+print (s5.split()) #separa por espacios en una lista
+print (type(s5.split())) 
+
+print (s5.split('i')) #separa por el caracter  i (es el separador) en una lista
+
+l = s5.split()
+print (l)
+s6 = ':'.join(l) #junta todos los elementos de la lista (l), usando ':' como concatenador
+print (s6)
