@@ -57,6 +57,7 @@ def diccionarios():
     # También se pueden crear indicando dict(gato='miau', perro='guau')
     # Las claves pueden ser numeros, y los valores también
     print_dic(animales)
+    print (f'La función items devuelve esto: {animales.items()}')
 
     print (animales['Gos']) #Devuelve el valor de la clave indicada. Guau
     animales['Gos'] = 'Bup'
@@ -139,6 +140,6 @@ if __name__ == '__main__':
     # if isintance (objeto, tipo): haz esto -> if isintance (o, list):
 
     #main() # listas y tuplas
-    #diccionarios()
+    diccionarios()
     #sets()
-    list_compehension()
+    #list_compehension()
