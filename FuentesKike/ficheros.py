@@ -35,3 +35,4 @@ if __name__ == '__main__':
     #main() #simple lectura
     #copiar_ficheros_texto()
     copiar_ficheros_binarios() #copia de una imagen
+    # Prueba Git VDI
