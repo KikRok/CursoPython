@@ -140,6 +140,6 @@ if __name__ == '__main__':
     # if isintance (objeto, tipo): haz esto -> if isintance (o, list):
 
     #main() # listas y tuplas
-    diccionarios()
-    #sets()
+    #diccionarios()
+    sets()
     #list_compehension()

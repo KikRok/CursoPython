@@ -1,2 +1,4 @@
 base_datos_2008.csv
 *.pdf
+*.sas7bdat
+users.csv
